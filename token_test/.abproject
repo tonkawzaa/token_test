@@ -1,0 +1,45 @@
+{
+  "ProjectName": "token_test",
+  "ProjectGuid": "15a7d2a8-2d3d-4bcc-8a3e-9e0bda7a9421",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.tokentest",
+  "DisplayName": "token_test",
+  "Author": "",
+  "Description": "token_test",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{d4b62fcf-1316-4c33-a38a-25ef19551a33}",
+  "WP8ProductID": "{4a8beeb1-c463-46fd-ad3f-7e132ac32809}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.tokentest",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
