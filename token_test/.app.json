@@ -8,9 +8,183 @@
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "formView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "username",
+              "title": "Username",
+              "inputType": "text",
+              "placeholder": "Username"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "password",
+              "title": "password",
+              "inputType": "text",
+              "placeholder": "password"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "radio",
+              "title": "Label",
+              "inputType": "radio",
+              "group": "group1"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "radio2",
+              "title": "Label2",
+              "inputType": "radio",
+              "group": "group1"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Form",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "signin",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "signinModel",
+          "dataProvider": "tokenTest",
+          "emailLabel": "Email",
+          "emailPlaceholder": "Email",
+          "passwordLabel": "Password",
+          "passwordPlaceholder": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "title": "signin",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "csignin",
+      "components": [],
+      "title": "Csignin",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "signup",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "login",
+              "title": "login",
+              "inputType": "text",
+              "placeholder": "login"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "firstname",
+              "title": "firstname",
+              "inputType": "text",
+              "placeholder": "firstname"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "lastname",
+              "title": "lastname",
+              "inputType": "text",
+              "placeholder": "lastname"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "password1",
+              "title": "password",
+              "inputType": "password",
+              "placeholder": "password"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "confirmpassword",
+              "title": "confirmpassword",
+              "inputType": "password",
+              "placeholder": "confirmpassword"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "gender",
+              "title": "gender",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "mobile",
+              "title": "mobile",
+              "inputType": "tel",
+              "placeholder": "+663 444 555 666"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "birthdate",
+              "title": "birth date",
+              "inputType": "date"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "citizenid",
+              "title": "citizen_id",
+              "inputType": "text",
+              "placeholder": "citizen_id"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "occupation",
+              "title": "occupation",
+              "inputType": "dropdownlist"
+            }
+          ],
+          "name": "signupModel",
+          "submitButton": "signup",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "signup",
+      "addToNavigation": true,
+      "icon": "add"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "tokenTest",
+      "title": "token_test / token_test",
+      "source": "everlive",
+      "everliveKey": "clysxjtxolrzbus3",
+      "offlineStorage": false
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",

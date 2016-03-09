@@ -11,9 +11,15 @@
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="app.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script src="dataProviders/tokenTest.js"></script>
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/signup/index.js"></script>
+    <script src="components/csignin/index.js"></script>
+    <script src="components/signin/index.js"></script>
+    <script src="components/formView/index.js"></script>
     <script src="components/home/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
@@ -27,6 +33,10 @@
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
                 <a href="components/home/view.html" data-icon="home">Home View</a>
+                <a href="components/formView/view.html" data-icon="bookmarks">Form</a>
+                <a href="components/signin/view.html" data-icon="bookmarks">signin</a>
+                <a href="components/csignin/view.html" data-icon="bookmarks">Csignin</a>
+                <a href="components/signup/view.html" data-icon="add">signup</a>
             </div>
         </footer>
     </div>
