@@ -14,11 +14,11 @@ app.home = kendo.observable({
         
         
         data: new kendo.data.DataSource({
-            top : localStorage.getItem(token),
+                        
             transport: {
                 read: function(options) {
                     var header_token = null;
-                    var top = null;
+                    var point = null;
             
             		token = null;
         			token = localStorage.getItem(token);
@@ -31,8 +31,9 @@ app.home = kendo.observable({
                 		headers: {'Authorization' : header_token},
                         success: function(result) {
                             
-                            navigator.notification.alert(result.data);
-                            //localStorage.setItem(top,result.data);
+                           // navigator.notification.alert(result.data);
+                            point = result.data;
+                            navigator.notification.alert(point);
                          
                      
                         },
