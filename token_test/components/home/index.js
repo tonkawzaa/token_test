@@ -7,11 +7,10 @@ app.home = kendo.observable({
 
 (function(parent) {
     
+
     var token= null ;           
     
     var homeModel = kendo.observable({
-        
-        
         
         data: new kendo.data.DataSource({
                         
@@ -44,13 +43,16 @@ app.home = kendo.observable({
                 });
                     }
             },
+            
         schema: {
             data: "data"
         }
     }),
         
-       
-        
+        data1: new kendo.data.DataSource({
+            top:"top555",
+        }),
+    
         showtoken: function() {
             token = null;
         	token = localStorage.getItem(token);
@@ -68,4 +70,6 @@ app.home = kendo.observable({
         });
 
     parent.set('homeModel', homeModel);
+    
 })(app.home);
+ 

@@ -2,80 +2,118 @@
     <div id="signupModel" class="form-view">
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
-                <li>
+                <li class="form-content-item">
 
-                    <label>E-mail
-                        <input data-bind="value: signupModel.fields.email" placeholder="login" type="text">
+
+                    <label>
+
+                        login
+
+                        <input data-bind="value: signupModel.fields.email" placeholder="email" type="text">
                     </label>
 
                 </li>
-                <li>
+                <li class="form-content-item">
 
-                    <label>firstname
+
+                    <label>
+
+                        firstname
+
                         <input data-bind="value: signupModel.fields.firstname" placeholder="firstname" type="text">
                     </label>
 
                 </li>
-                <li>
+                <li class="form-content-item">
 
-                    <label>lastname
+
+                    <label>
+
+                        lastname
+
                         <input data-bind="value: signupModel.fields.lastname" placeholder="lastname" type="text">
                     </label>
 
                 </li>
-                <li>
+                <li class="form-content-item">
 
-                    <label>password
+
+                    <label>
+
+                        password
+
                         <input data-bind="value: signupModel.fields.password1" placeholder="password" type="password">
                     </label>
 
                 </li>
-                <li>
+                <li class="form-content-item">
 
-                    <label>confirmpassword
+
+                    <label>
+
+                        confirmpassword
+
                         <input data-bind="value: signupModel.fields.confirmpassword" placeholder="confirmpassword" type="password">
                     </label>
 
                 </li>
-                  <li>
+                <li class="form-content-item">
 
-                    <label>mobile
+
+                    <label>
+
+                        mobile
+
                         <input data-bind="value: signupModel.fields.mobile" placeholder="+663 444 555 666" type="tel">
                     </label>
 
                 </li>
-                <li>
-                    <label>gender
+                <li class="form-content-item">
+                    <label>
+
+                        gender
+
                         <select data-bind="value: signupModel.fields.gender" data-role="dropdownlist">
                             <option value="M">male</option>
-                            <option value="F">female</option> 
+                            <option value="F">female</option>
                         </select>
                     </label>
                 </li>
-              
-                <li>
+                
+                <li class="form-content-item">
 
-                    <label>birth date
+
+                    <label>
+
+                        birth date
+
                         <input data-bind="value: signupModel.fields.birthdate" type="date">
                     </label>
 
                 </li>
-                <li>
+                <li class="form-content-item">
 
-                    <label>citizen_id
+
+                    <label>
+
+                        citizen_id
+
                         <input data-bind="value: signupModel.fields.citizenid" placeholder="citizen_id" type="text">
                     </label>
 
                 </li>
-                <li>
-                    <label>occupation
+                <li class="form-content-item">
+                    <label>
+
+                        occupation
+
                         <select data-bind="value: signupModel.fields.occupation" data-role="dropdownlist">
                             <option value="0">ราชการ</option>
                             <option value="1">เอกชน</option>
                             <option value="2">รัฐวิสาหกิจ</option>
                             <option value="3">อิสระ</option>
                             <option value="4">NGO</option>
-                            <option value="5">นิสิต-นักศึกษา</option>
+                            <option value="5">นิสิต-นักศึกษา </option>
                         </select>
                     </label>
                 </li>

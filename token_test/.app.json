@@ -21,6 +21,7 @@
               "name": "username",
               "title": "Username",
               "inputType": "text",
+              "titlePosition": "left",
               "placeholder": "Username"
             },
             {
@@ -28,6 +29,7 @@
               "name": "password",
               "title": "password",
               "inputType": "text",
+              "titlePosition": "left",
               "placeholder": "password"
             },
             {
@@ -35,6 +37,7 @@
               "name": "radio",
               "title": "Label",
               "inputType": "radio",
+              "titlePosition": "left",
               "group": "group1"
             },
             {
@@ -42,6 +45,7 @@
               "name": "radio2",
               "title": "Label2",
               "inputType": "radio",
+              "titlePosition": "left",
               "group": "group1"
             }
           ],
@@ -75,7 +79,9 @@
           "registerNameLabel": "Name",
           "registerLabel": "Register",
           "registerRedirect": "home",
-          "gotoSigninLabel": "Sign In"
+          "gotoSigninLabel": "Sign In",
+          "enableLogout": false,
+          "enableRememberme": false
         }
       ],
       "title": "signin",
@@ -102,6 +108,7 @@
               "name": "login",
               "title": "login",
               "inputType": "text",
+              "titlePosition": "left",
               "placeholder": "login"
             },
             {
@@ -109,6 +116,7 @@
               "name": "firstname",
               "title": "firstname",
               "inputType": "text",
+              "titlePosition": "left",
               "placeholder": "firstname"
             },
             {
@@ -116,6 +124,7 @@
               "name": "lastname",
               "title": "lastname",
               "inputType": "text",
+              "titlePosition": "left",
               "placeholder": "lastname"
             },
             {
@@ -123,6 +132,7 @@
               "name": "password1",
               "title": "password",
               "inputType": "password",
+              "titlePosition": "left",
               "placeholder": "password"
             },
             {
@@ -130,39 +140,45 @@
               "name": "confirmpassword",
               "title": "confirmpassword",
               "inputType": "password",
+              "titlePosition": "left",
               "placeholder": "confirmpassword"
             },
             {
               "type": "kendo-ui-mobile:field",
               "name": "gender",
               "title": "gender",
-              "inputType": "dropdownlist"
+              "inputType": "dropdownlist",
+              "titlePosition": "left"
             },
             {
               "type": "kendo-ui-mobile:field",
               "name": "mobile",
               "title": "mobile",
               "inputType": "tel",
+              "titlePosition": "left",
               "placeholder": "+663 444 555 666"
             },
             {
               "type": "kendo-ui-mobile:field",
               "name": "birthdate",
               "title": "birth date",
-              "inputType": "date"
+              "inputType": "date",
+              "titlePosition": "left"
             },
             {
               "type": "kendo-ui-mobile:field",
               "name": "citizenid",
               "title": "citizen_id",
               "inputType": "text",
+              "titlePosition": "left",
               "placeholder": "citizen_id"
             },
             {
               "type": "kendo-ui-mobile:field",
               "name": "occupation",
               "title": "occupation",
-              "inputType": "dropdownlist"
+              "inputType": "dropdownlist",
+              "titlePosition": "left"
             }
           ],
           "name": "signupModel",

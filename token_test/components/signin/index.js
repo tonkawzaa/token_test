@@ -29,11 +29,21 @@ app.signin = kendo.observable({
             } else {
                 $(activeView).show().siblings().hide();
             }
+
         },
         successHandler = function(data) {
-            var redirect = mode === 'signin' ? signinRedirect : registerRedirect;
+            var redirect = mode === 'signin' ? signinRedirect : registerRedirect,
+                model = parent.signinModel || {},
+                logout = model.logout;
 
+            if (logout) {
+                model.set('logout', null);
+            }
             if (data && data.result) {
+                if (logout) {
+                    provider.Users.logout(init, init);
+                    return;
+                }
                 app.user = data.result;
 
                 setTimeout(function() {
@@ -68,7 +78,7 @@ app.signin = kendo.observable({
                 if (!model.validateData(model)) {
                     return false;
                 }
-                provider.Users.login(model.email.toLowerCase(), model.password, successHandler, init);
+                provider.Users.login(email, password, successHandler, init);
             },
             register: function() {
                 var model = signinModel,
@@ -93,7 +103,15 @@ app.signin = kendo.observable({
         });
 
     parent.set('signinModel', signinModel);
-    parent.set('afterShow', function() {
+    parent.set('afterShow', function(e) {
+        if (e && e.view && e.view.params && e.view.params.logout) {
+            if (localStorage) {
+                localStorage.setItem(rememberKey, null);
+            } else {
+                app[rememberKey] = null;
+            }
+            signinModel.set('logout', true);
+        }
         provider.Users.currentUser().then(successHandler, init);
     });
 })(app.signin);

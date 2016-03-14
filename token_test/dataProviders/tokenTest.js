@@ -1,18 +1,16 @@
 'use strict';
 
 (function() {
-    var provider = app.data.tokenTest =  new Everlive({
+    var provider = app.data.tokenTest = new Everlive({
             appId: 'clysxjtxolrzbus3',
             scheme: 'https',
             authentication: {
                 persist: true
             }
         }),
-        /*
         accessTokenCacheKey = 'tokenTest_access_token',
         providerAuthentication = provider.authentication,
         providerLogin = provider.Users.login,
-        */
         authentication = {
             setCachedAccessToken: function setCachedAccessToken(token) {
                 if (localStorage) {
@@ -24,11 +22,10 @@
             getCachedAccessToken: function getCachedAccessToken() {
                 if (localStorage) {
                     return JSON.parse(localStorage.getItem(accessTokenCacheKey));
-                    
                 } else {
                     return app[accessTokenCacheKey];
                 }
-            }/*,
+            },
             getCacheAccessTokenFn: function getCacheAccessTokenFn(callback) {
                 return function cacheAccessToken(data) {
                     if (data && data.result) {
@@ -59,9 +56,8 @@
                         providerAuthentication.clearAuthorization();
                     });
                 }
-            }*/
+            }
         };
-    /*
 
     authentication.loadCachedAccessToken();
     provider.Users.login = function cacheAccessTokenLogin(
@@ -69,10 +65,8 @@
         providerLogin.call(this, email, password,
             authentication.getCacheAccessTokenFn(success), error);
     };
-*/
+
 }());
-
-
 
 // START_CUSTOM_CODE_tokenTest
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes

@@ -1,0 +1,33 @@
+<div data-role="view" data-title="details Gifts" data-layout="main" data-model="app.detailsgifts" 
+     data-show="app.detailsgifts.onShow" data-after-show="app.detailsgifts.afterShow">
+    <div>
+        <span data-bind="text: index">
+    </div>
+     
+
+    <div id="data1Content" > 
+    <span data-bind="text: title"></span>
+    <span data-bind="text: title2"></span>
+    <span data-bind="text: title3"></span>
+    <span data-bind="text: title4"></span>
+     </div>
+    
+   <div id="dataContent" > 
+    <span data-bind="text: top1"></span>
+    <span data-bind="text: title3"></span>
+   </div>
+        
+   <ul data-role="listview" data-source="app.detailsgifts.detailsdata" data-template="books-template"></ul>
+
+
+    <script type="text/x-kendo-template" id="books-template">   
+            <div>#: name #</div>
+            <!-- <div>#: id #</div>
+            <div>#: end_date #</div>
+            <div><img style="width:100%;" src="data:image/png;base64,#: image_mobile #" /></div>
+            <div>#: name #</div>
+            -->
+     </script>
+        
+
+</div>
